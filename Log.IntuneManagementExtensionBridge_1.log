@@ -1,0 +1,493 @@
+2023-02-15T08:36:51.6191259Z	INFO	Event      	None           	         0	df780934-05ae-4ac3-a777-0eac98bf5514	1-0-0	IntuneManagementExtension Bridge starting up.
+2023-02-15T08:36:51.6578791Z	INFO	Event      	None           	         0	df780934-05ae-4ac3-a777-0eac98bf5514	1-0-0	Loading settings file
+2023-02-15T08:36:51.6638760Z	INFO	Event      	None           	         0	df780934-05ae-4ac3-a777-0eac98bf5514	6-0-0	<?xml version="1.0" encoding="utf-8"?>
+	<settings>
+	  <enableDebug>false</enableDebug>
+	  <extensions>
+	    <extension>AzureAD</extension>
+	  </extensions>
+	  <AzureAD>
+	    <authority>organizations</authority>
+	    <validateAuthority>true</validateAuthority>
+	    <useCorporateNetwork>true</useCorporateNetwork>
+	    <stsAadTokenHandler>https://manage.microsoft.com/UISecurityTokenService/StsAadTokenHandler.ashx?api-version=1.0</stsAadTokenHandler>
+	    <changePasswordUri>https://go.microsoft.com/fwlink/?LinkId=506634</changePasswordUri>
+	    <tokenRenewalThreshold>0.5</tokenRenewalThreshold>
+	    <redirectUriOverride>false</redirectUriOverride>
+	  </AzureAD>
+	  <Graph>
+	    <aadEndpoint>https://graph.windows.net</aadEndpoint>
+	    <msEndpoint>https://graph.microsoft.com/</msEndpoint>
+	    <apiVersion>v1.0</apiVersion>
+	  </Graph>
+	  <Experimentation>
+	    <endpoint>https://config.edge.skype.com/config/v1/WindowsCP/1.0.0.0/</endpoint>
+	    <agent>WindowsCP</agent>
+	  </Experimentation>
+	  <deviceCacheDurationSeconds>600</deviceCacheDurationSeconds>
+	  <contactCacheDurationSeconds>3600</contactCacheDurationSeconds>
+	  <filterCacheDurationSeconds>300</filterCacheDurationSeconds>
+	  <applicationCacheDurationSeconds>300</applicationCacheDurationSeconds>
+	  <backgroundMonitorPollingIntervalSeconds>10</backgroundMonitorPollingIntervalSeconds>
+	  <PollingConfigurations>
+	    <DefaultPollingIntervalInSeconds>600</DefaultPollingIntervalInSeconds>
+	  </PollingConfigurations>
+	  <localMsiMonitorPollingIntervalSeconds>5</localMsiMonitorPollingIntervalSeconds>
+	  <aadRegistrationMonitorPollingIntervalSeconds>10</aadRegistrationMonitorPollingIntervalSeconds>
+	  <!-- mdmEnrollmentPollingIntervalSeconds is 20 seconds due to costly and sometimes slow (10-15s) device queries -->
+	  <mdmEnrollmentPollingIntervalSeconds>20</mdmEnrollmentPollingIntervalSeconds>
+	  <remoteSessionPollingIntervalSeconds>15</remoteSessionPollingIntervalSeconds>
+	  <fileOperationRetryBackoffSeconds>0.5</fileOperationRetryBackoffSeconds>
+	</settings>
+	
+2023-02-15T08:36:51.8777304Z	INFO	Event      	None           	         0	df780934-05ae-4ac3-a777-0eac98bf5514	8-0-0	[AppService Client] Connection opened to "msft.intune.companyportal.sidecarbridge", awaiting acknowledgement.
+2023-02-15T08:36:51.8977305Z	INFO	Event      	None           	         0	df780934-05ae-4ac3-a777-0eac98bf5514	9-0-0	[AppService Client] {Request #1} Trying to parse expected AppService connection result...
+2023-02-15T08:36:51.9187623Z	INFO	Event      	None           	         0	df780934-05ae-4ac3-a777-0eac98bf5514	5-0-0	[AppService Client] The App Service connection completed successfully.
+2023-02-15T08:36:51.9499664Z	INFO	Event      	None           	         0	df780934-05ae-4ac3-a777-0eac98bf5514	9-0-0	[Management Extension] Initializing connection.
+2023-02-15T08:36:53.3320639Z	INFO	Event      	None           	         0	df780934-05ae-4ac3-a777-0eac98bf5514	12-0-0	[Management Extension] Service is running API version 6.  No adaptation needed.
+2023-02-15T08:36:53.3320639Z	INFO	Event      	None           	         0	df780934-05ae-4ac3-a777-0eac98bf5514	12-0-0	[Management Extension] Connection initialized. Idle timeout = 00:10:00.
+2023-02-15T08:36:53.3423698Z	INFO	Event      	None           	         0	df780934-05ae-4ac3-a777-0eac98bf5514	15-0-0	[Management Extension] Requesting all apps status.
+2023-02-15T08:37:19.7440271Z	INFO	Event      	None           	         0	df780934-05ae-4ac3-a777-0eac98bf5514	8-0-0	[AppService Client] The App Service connection has been closed from the other end. [Status = Completed]
+2023-02-15T08:37:19.7525469Z	INFO	Event      	None           	         0	df780934-05ae-4ac3-a777-0eac98bf5514	8-0-0	[AppService Client] The App Service is disconnected.
+2023-02-15T08:37:19.7620729Z	INFO	Event      	None           	         0	df780934-05ae-4ac3-a777-0eac98bf5514	8-0-0	[Management Extension] Disconnected.
+2023-02-15T08:37:19.7630754Z	INFO	Event      	None           	         0	df780934-05ae-4ac3-a777-0eac98bf5514	8-0-0	IntuneManagementExtension Bridge exiting.
+2023-02-15T08:38:12.2803712Z	INFO	Event      	None           	         0	4c7e6dfb-9862-4785-8139-97fa109d43d9	1-0-0	IntuneManagementExtension Bridge starting up.
+2023-02-15T08:38:12.3139001Z	INFO	Event      	None           	         0	4c7e6dfb-9862-4785-8139-97fa109d43d9	1-0-0	Loading settings file
+2023-02-15T08:38:12.3194116Z	INFO	Event      	None           	         0	4c7e6dfb-9862-4785-8139-97fa109d43d9	4-0-0	<?xml version="1.0" encoding="utf-8"?>
+	<settings>
+	  <enableDebug>false</enableDebug>
+	  <extensions>
+	    <extension>AzureAD</extension>
+	  </extensions>
+	  <AzureAD>
+	    <authority>organizations</authority>
+	    <validateAuthority>true</validateAuthority>
+	    <useCorporateNetwork>true</useCorporateNetwork>
+	    <stsAadTokenHandler>https://manage.microsoft.com/UISecurityTokenService/StsAadTokenHandler.ashx?api-version=1.0</stsAadTokenHandler>
+	    <changePasswordUri>https://go.microsoft.com/fwlink/?LinkId=506634</changePasswordUri>
+	    <tokenRenewalThreshold>0.5</tokenRenewalThreshold>
+	    <redirectUriOverride>false</redirectUriOverride>
+	  </AzureAD>
+	  <Graph>
+	    <aadEndpoint>https://graph.windows.net</aadEndpoint>
+	    <msEndpoint>https://graph.microsoft.com/</msEndpoint>
+	    <apiVersion>v1.0</apiVersion>
+	  </Graph>
+	  <Experimentation>
+	    <endpoint>https://config.edge.skype.com/config/v1/WindowsCP/1.0.0.0/</endpoint>
+	    <agent>WindowsCP</agent>
+	  </Experimentation>
+	  <deviceCacheDurationSeconds>600</deviceCacheDurationSeconds>
+	  <contactCacheDurationSeconds>3600</contactCacheDurationSeconds>
+	  <filterCacheDurationSeconds>300</filterCacheDurationSeconds>
+	  <applicationCacheDurationSeconds>300</applicationCacheDurationSeconds>
+	  <backgroundMonitorPollingIntervalSeconds>10</backgroundMonitorPollingIntervalSeconds>
+	  <PollingConfigurations>
+	    <DefaultPollingIntervalInSeconds>600</DefaultPollingIntervalInSeconds>
+	  </PollingConfigurations>
+	  <localMsiMonitorPollingIntervalSeconds>5</localMsiMonitorPollingIntervalSeconds>
+	  <aadRegistrationMonitorPollingIntervalSeconds>10</aadRegistrationMonitorPollingIntervalSeconds>
+	  <!-- mdmEnrollmentPollingIntervalSeconds is 20 seconds due to costly and sometimes slow (10-15s) device queries -->
+	  <mdmEnrollmentPollingIntervalSeconds>20</mdmEnrollmentPollingIntervalSeconds>
+	  <remoteSessionPollingIntervalSeconds>15</remoteSessionPollingIntervalSeconds>
+	  <fileOperationRetryBackoffSeconds>0.5</fileOperationRetryBackoffSeconds>
+	</settings>
+	
+2023-02-15T08:38:12.5386303Z	INFO	Event      	None           	         0	4c7e6dfb-9862-4785-8139-97fa109d43d9	8-0-0	[AppService Client] Connection opened to "msft.intune.companyportal.sidecarbridge", awaiting acknowledgement.
+2023-02-15T08:38:12.5546513Z	INFO	Event      	None           	         0	4c7e6dfb-9862-4785-8139-97fa109d43d9	9-0-0	[AppService Client] {Request #1} Trying to parse expected AppService connection result...
+2023-02-15T08:38:12.5671943Z	INFO	Event      	None           	         0	4c7e6dfb-9862-4785-8139-97fa109d43d9	3-0-0	[AppService Client] The App Service connection completed successfully.
+2023-02-15T08:38:12.5890367Z	INFO	Event      	None           	         0	4c7e6dfb-9862-4785-8139-97fa109d43d9	9-0-0	[Management Extension] Initializing connection.
+2023-02-15T08:38:12.6499212Z	INFO	Event      	None           	         0	4c7e6dfb-9862-4785-8139-97fa109d43d9	12-0-0	[Management Extension] Service is running API version 6.  No adaptation needed.
+2023-02-15T08:38:12.6499212Z	INFO	Event      	None           	         0	4c7e6dfb-9862-4785-8139-97fa109d43d9	12-0-0	[Management Extension] Connection initialized. Idle timeout = 00:10:00.
+2023-02-15T08:38:12.6587093Z	INFO	Event      	None           	         0	4c7e6dfb-9862-4785-8139-97fa109d43d9	15-0-0	[Management Extension] Requesting all apps status.
+2023-02-15T08:48:12.7703366Z	ERR_	Event      	None           	         0	4c7e6dfb-9862-4785-8139-97fa109d43d9	11-0-0	[Management Extension] Client channel is in a faulted state. This is expected if the idle timeout has elapsed. Idle time = 00:10:00.1047259.
+2023-02-15T08:48:12.7765129Z	INFO	Event      	None           	         0	4c7e6dfb-9862-4785-8139-97fa109d43d9	11-0-0	[Management Extension] Disconnected.
+2023-02-15T08:48:12.7765129Z	INFO	Event      	None           	         0	4c7e6dfb-9862-4785-8139-97fa109d43d9	11-0-0	[AppService Client] Management Extension client disconnected.
+2023-02-15T08:48:12.7805137Z	INFO	Event      	None           	         0	4c7e6dfb-9862-4785-8139-97fa109d43d9	11-0-0	[AppService Client] The App Service is disconnected.
+2023-02-15T08:48:12.7825119Z	INFO	Event      	None           	         0	4c7e6dfb-9862-4785-8139-97fa109d43d9	11-0-0	[Management Extension] Disconnected.
+2023-02-15T08:48:12.7825119Z	INFO	Event      	None           	         0	4c7e6dfb-9862-4785-8139-97fa109d43d9	11-0-0	IntuneManagementExtension Bridge exiting.
+2023-02-15T19:37:16.1500218Z	INFO	Event      	None           	         0	2c4bd1ea-870b-43fb-9f61-8b81c9a80471	1-0-0	IntuneManagementExtension Bridge starting up.
+2023-02-15T19:37:16.1963805Z	INFO	Event      	None           	         0	2c4bd1ea-870b-43fb-9f61-8b81c9a80471	1-0-0	Loading settings file
+2023-02-15T19:37:16.2031126Z	INFO	Event      	None           	         0	2c4bd1ea-870b-43fb-9f61-8b81c9a80471	4-0-0	<?xml version="1.0" encoding="utf-8"?>
+	<settings>
+	  <enableDebug>false</enableDebug>
+	  <extensions>
+	    <extension>AzureAD</extension>
+	  </extensions>
+	  <AzureAD>
+	    <authority>organizations</authority>
+	    <validateAuthority>true</validateAuthority>
+	    <useCorporateNetwork>true</useCorporateNetwork>
+	    <stsAadTokenHandler>https://manage.microsoft.com/UISecurityTokenService/StsAadTokenHandler.ashx?api-version=1.0</stsAadTokenHandler>
+	    <changePasswordUri>https://go.microsoft.com/fwlink/?LinkId=506634</changePasswordUri>
+	    <tokenRenewalThreshold>0.5</tokenRenewalThreshold>
+	    <redirectUriOverride>false</redirectUriOverride>
+	  </AzureAD>
+	  <Graph>
+	    <aadEndpoint>https://graph.windows.net</aadEndpoint>
+	    <msEndpoint>https://graph.microsoft.com/</msEndpoint>
+	    <apiVersion>v1.0</apiVersion>
+	  </Graph>
+	  <Experimentation>
+	    <endpoint>https://config.edge.skype.com/config/v1/WindowsCP/1.0.0.0/</endpoint>
+	    <agent>WindowsCP</agent>
+	  </Experimentation>
+	  <deviceCacheDurationSeconds>600</deviceCacheDurationSeconds>
+	  <contactCacheDurationSeconds>3600</contactCacheDurationSeconds>
+	  <filterCacheDurationSeconds>300</filterCacheDurationSeconds>
+	  <applicationCacheDurationSeconds>300</applicationCacheDurationSeconds>
+	  <backgroundMonitorPollingIntervalSeconds>10</backgroundMonitorPollingIntervalSeconds>
+	  <PollingConfigurations>
+	    <DefaultPollingIntervalInSeconds>600</DefaultPollingIntervalInSeconds>
+	  </PollingConfigurations>
+	  <localMsiMonitorPollingIntervalSeconds>5</localMsiMonitorPollingIntervalSeconds>
+	  <aadRegistrationMonitorPollingIntervalSeconds>10</aadRegistrationMonitorPollingIntervalSeconds>
+	  <!-- mdmEnrollmentPollingIntervalSeconds is 20 seconds due to costly and sometimes slow (10-15s) device queries -->
+	  <mdmEnrollmentPollingIntervalSeconds>20</mdmEnrollmentPollingIntervalSeconds>
+	  <remoteSessionPollingIntervalSeconds>15</remoteSessionPollingIntervalSeconds>
+	  <fileOperationRetryBackoffSeconds>0.5</fileOperationRetryBackoffSeconds>
+	</settings>
+	
+2023-02-15T19:37:16.5706899Z	INFO	Event      	None           	         0	2c4bd1ea-870b-43fb-9f61-8b81c9a80471	8-0-0	[AppService Client] Connection opened to "msft.intune.companyportal.sidecarbridge", awaiting acknowledgement.
+2023-02-15T19:37:16.5974804Z	INFO	Event      	None           	         0	2c4bd1ea-870b-43fb-9f61-8b81c9a80471	9-0-0	[AppService Client] {Request #1} Trying to parse expected AppService connection result...
+2023-02-15T19:37:16.6136764Z	INFO	Event      	None           	         0	2c4bd1ea-870b-43fb-9f61-8b81c9a80471	6-0-0	[AppService Client] The App Service connection completed successfully.
+2023-02-15T19:37:16.6463604Z	INFO	Event      	None           	         0	2c4bd1ea-870b-43fb-9f61-8b81c9a80471	10-0-0	[Management Extension] Initializing connection.
+2023-02-15T19:37:19.0242095Z	INFO	Event      	None           	         0	2c4bd1ea-870b-43fb-9f61-8b81c9a80471	12-0-0	[Management Extension] Service is running API version 6.  No adaptation needed.
+2023-02-15T19:37:19.0242095Z	INFO	Event      	None           	         0	2c4bd1ea-870b-43fb-9f61-8b81c9a80471	12-0-0	[Management Extension] Connection initialized. Idle timeout = 00:10:00.
+2023-02-15T19:37:19.0447423Z	INFO	Event      	None           	         0	2c4bd1ea-870b-43fb-9f61-8b81c9a80471	9-0-0	[Management Extension] Requesting all apps status.
+2023-02-15T19:38:54.1332621Z	INFO	Event      	None           	         0	2c4bd1ea-870b-43fb-9f61-8b81c9a80471	10-0-0	[Management Extension] Requesting all apps status.
+2023-02-15T19:42:30.0410457Z	INFO	Event      	None           	         0	2c4bd1ea-870b-43fb-9f61-8b81c9a80471	13-0-0	[AppService Client] The App Service connection has been closed from the other end. [Status = Completed]
+2023-02-15T19:42:30.0464501Z	INFO	Event      	None           	         0	2c4bd1ea-870b-43fb-9f61-8b81c9a80471	13-0-0	[AppService Client] The App Service is disconnected.
+2023-02-15T19:42:30.0627853Z	INFO	Event      	None           	         0	2c4bd1ea-870b-43fb-9f61-8b81c9a80471	13-0-0	[Management Extension] Disconnected.
+2023-02-15T19:42:30.0637838Z	INFO	Event      	None           	         0	2c4bd1ea-870b-43fb-9f61-8b81c9a80471	13-0-0	IntuneManagementExtension Bridge exiting.
+2023-02-15T19:43:07.1987847Z	INFO	Event      	None           	         0	b004b79f-f371-4c6e-8cf7-2082ad4e238f	1-0-0	IntuneManagementExtension Bridge starting up.
+2023-02-15T19:43:07.2478447Z	INFO	Event      	None           	         0	b004b79f-f371-4c6e-8cf7-2082ad4e238f	1-0-0	Loading settings file
+2023-02-15T19:43:07.2554590Z	INFO	Event      	None           	         0	b004b79f-f371-4c6e-8cf7-2082ad4e238f	6-0-0	<?xml version="1.0" encoding="utf-8"?>
+	<settings>
+	  <enableDebug>false</enableDebug>
+	  <extensions>
+	    <extension>AzureAD</extension>
+	  </extensions>
+	  <AzureAD>
+	    <authority>organizations</authority>
+	    <validateAuthority>true</validateAuthority>
+	    <useCorporateNetwork>true</useCorporateNetwork>
+	    <stsAadTokenHandler>https://manage.microsoft.com/UISecurityTokenService/StsAadTokenHandler.ashx?api-version=1.0</stsAadTokenHandler>
+	    <changePasswordUri>https://go.microsoft.com/fwlink/?LinkId=506634</changePasswordUri>
+	    <tokenRenewalThreshold>0.5</tokenRenewalThreshold>
+	    <redirectUriOverride>false</redirectUriOverride>
+	  </AzureAD>
+	  <Graph>
+	    <aadEndpoint>https://graph.windows.net</aadEndpoint>
+	    <msEndpoint>https://graph.microsoft.com/</msEndpoint>
+	    <apiVersion>v1.0</apiVersion>
+	  </Graph>
+	  <Experimentation>
+	    <endpoint>https://config.edge.skype.com/config/v1/WindowsCP/1.0.0.0/</endpoint>
+	    <agent>WindowsCP</agent>
+	  </Experimentation>
+	  <deviceCacheDurationSeconds>600</deviceCacheDurationSeconds>
+	  <contactCacheDurationSeconds>3600</contactCacheDurationSeconds>
+	  <filterCacheDurationSeconds>300</filterCacheDurationSeconds>
+	  <applicationCacheDurationSeconds>300</applicationCacheDurationSeconds>
+	  <backgroundMonitorPollingIntervalSeconds>10</backgroundMonitorPollingIntervalSeconds>
+	  <PollingConfigurations>
+	    <DefaultPollingIntervalInSeconds>600</DefaultPollingIntervalInSeconds>
+	  </PollingConfigurations>
+	  <localMsiMonitorPollingIntervalSeconds>5</localMsiMonitorPollingIntervalSeconds>
+	  <aadRegistrationMonitorPollingIntervalSeconds>10</aadRegistrationMonitorPollingIntervalSeconds>
+	  <!-- mdmEnrollmentPollingIntervalSeconds is 20 seconds due to costly and sometimes slow (10-15s) device queries -->
+	  <mdmEnrollmentPollingIntervalSeconds>20</mdmEnrollmentPollingIntervalSeconds>
+	  <remoteSessionPollingIntervalSeconds>15</remoteSessionPollingIntervalSeconds>
+	  <fileOperationRetryBackoffSeconds>0.5</fileOperationRetryBackoffSeconds>
+	</settings>
+	
+2023-02-15T19:43:07.5249846Z	INFO	Event      	None           	         0	b004b79f-f371-4c6e-8cf7-2082ad4e238f	8-0-0	[AppService Client] Connection opened to "msft.intune.companyportal.sidecarbridge", awaiting acknowledgement.
+2023-02-15T19:43:07.5440862Z	INFO	Event      	None           	         0	b004b79f-f371-4c6e-8cf7-2082ad4e238f	9-0-0	[AppService Client] {Request #1} Trying to parse expected AppService connection result...
+2023-02-15T19:43:07.5590165Z	INFO	Event      	None           	         0	b004b79f-f371-4c6e-8cf7-2082ad4e238f	5-0-0	[AppService Client] The App Service connection completed successfully.
+2023-02-15T19:43:07.5883114Z	INFO	Event      	None           	         0	b004b79f-f371-4c6e-8cf7-2082ad4e238f	10-0-0	[Management Extension] Initializing connection.
+2023-02-15T19:43:07.6747655Z	INFO	Event      	None           	         0	b004b79f-f371-4c6e-8cf7-2082ad4e238f	12-0-0	[Management Extension] Service is running API version 6.  No adaptation needed.
+2023-02-15T19:43:07.6747655Z	INFO	Event      	None           	         0	b004b79f-f371-4c6e-8cf7-2082ad4e238f	12-0-0	[Management Extension] Connection initialized. Idle timeout = 00:10:00.
+2023-02-15T19:43:07.6854110Z	INFO	Event      	None           	         0	b004b79f-f371-4c6e-8cf7-2082ad4e238f	9-0-0	[Management Extension] Requesting all apps status.
+2023-02-15T19:43:52.0555884Z	INFO	Event      	None           	         0	b004b79f-f371-4c6e-8cf7-2082ad4e238f	13-0-0	[AppService Client] The App Service connection has been closed from the other end. [Status = Completed]
+2023-02-15T19:43:52.0632069Z	INFO	Event      	None           	         0	b004b79f-f371-4c6e-8cf7-2082ad4e238f	13-0-0	[AppService Client] The App Service is disconnected.
+2023-02-15T19:43:52.0728292Z	INFO	Event      	None           	         0	b004b79f-f371-4c6e-8cf7-2082ad4e238f	13-0-0	[Management Extension] Disconnected.
+2023-02-15T19:43:52.0728292Z	INFO	Event      	None           	         0	b004b79f-f371-4c6e-8cf7-2082ad4e238f	13-0-0	IntuneManagementExtension Bridge exiting.
+2023-02-15T19:46:41.3520065Z	INFO	Event      	None           	         0	cf0b0014-60ad-4ba4-8c53-5570278e7b26	1-0-0	IntuneManagementExtension Bridge starting up.
+2023-02-15T19:46:41.3974617Z	INFO	Event      	None           	         0	cf0b0014-60ad-4ba4-8c53-5570278e7b26	1-0-0	Loading settings file
+2023-02-15T19:46:41.4057274Z	INFO	Event      	None           	         0	cf0b0014-60ad-4ba4-8c53-5570278e7b26	6-0-0	<?xml version="1.0" encoding="utf-8"?>
+	<settings>
+	  <enableDebug>false</enableDebug>
+	  <extensions>
+	    <extension>AzureAD</extension>
+	  </extensions>
+	  <AzureAD>
+	    <authority>organizations</authority>
+	    <validateAuthority>true</validateAuthority>
+	    <useCorporateNetwork>true</useCorporateNetwork>
+	    <stsAadTokenHandler>https://manage.microsoft.com/UISecurityTokenService/StsAadTokenHandler.ashx?api-version=1.0</stsAadTokenHandler>
+	    <changePasswordUri>https://go.microsoft.com/fwlink/?LinkId=506634</changePasswordUri>
+	    <tokenRenewalThreshold>0.5</tokenRenewalThreshold>
+	    <redirectUriOverride>false</redirectUriOverride>
+	  </AzureAD>
+	  <Graph>
+	    <aadEndpoint>https://graph.windows.net</aadEndpoint>
+	    <msEndpoint>https://graph.microsoft.com/</msEndpoint>
+	    <apiVersion>v1.0</apiVersion>
+	  </Graph>
+	  <Experimentation>
+	    <endpoint>https://config.edge.skype.com/config/v1/WindowsCP/1.0.0.0/</endpoint>
+	    <agent>WindowsCP</agent>
+	  </Experimentation>
+	  <deviceCacheDurationSeconds>600</deviceCacheDurationSeconds>
+	  <contactCacheDurationSeconds>3600</contactCacheDurationSeconds>
+	  <filterCacheDurationSeconds>300</filterCacheDurationSeconds>
+	  <applicationCacheDurationSeconds>300</applicationCacheDurationSeconds>
+	  <backgroundMonitorPollingIntervalSeconds>10</backgroundMonitorPollingIntervalSeconds>
+	  <PollingConfigurations>
+	    <DefaultPollingIntervalInSeconds>600</DefaultPollingIntervalInSeconds>
+	  </PollingConfigurations>
+	  <localMsiMonitorPollingIntervalSeconds>5</localMsiMonitorPollingIntervalSeconds>
+	  <aadRegistrationMonitorPollingIntervalSeconds>10</aadRegistrationMonitorPollingIntervalSeconds>
+	  <!-- mdmEnrollmentPollingIntervalSeconds is 20 seconds due to costly and sometimes slow (10-15s) device queries -->
+	  <mdmEnrollmentPollingIntervalSeconds>20</mdmEnrollmentPollingIntervalSeconds>
+	  <remoteSessionPollingIntervalSeconds>15</remoteSessionPollingIntervalSeconds>
+	  <fileOperationRetryBackoffSeconds>0.5</fileOperationRetryBackoffSeconds>
+	</settings>
+	
+2023-02-15T19:46:41.7056151Z	INFO	Event      	None           	         0	cf0b0014-60ad-4ba4-8c53-5570278e7b26	8-0-0	[AppService Client] Connection opened to "msft.intune.companyportal.sidecarbridge", awaiting acknowledgement.
+2023-02-15T19:46:41.7327492Z	INFO	Event      	None           	         0	cf0b0014-60ad-4ba4-8c53-5570278e7b26	9-0-0	[AppService Client] {Request #1} Trying to parse expected AppService connection result...
+2023-02-15T19:46:41.7485578Z	INFO	Event      	None           	         0	cf0b0014-60ad-4ba4-8c53-5570278e7b26	4-0-0	[AppService Client] The App Service connection completed successfully.
+2023-02-15T19:46:41.7779139Z	INFO	Event      	None           	         0	cf0b0014-60ad-4ba4-8c53-5570278e7b26	10-0-0	[Management Extension] Initializing connection.
+2023-02-15T19:46:41.8605239Z	INFO	Event      	None           	         0	cf0b0014-60ad-4ba4-8c53-5570278e7b26	13-0-0	[Management Extension] Service is running API version 6.  No adaptation needed.
+2023-02-15T19:46:41.8605239Z	INFO	Event      	None           	         0	cf0b0014-60ad-4ba4-8c53-5570278e7b26	13-0-0	[Management Extension] Connection initialized. Idle timeout = 00:10:00.
+2023-02-15T19:46:41.8708113Z	INFO	Event      	None           	         0	cf0b0014-60ad-4ba4-8c53-5570278e7b26	9-0-0	[Management Extension] Requesting all apps status.
+2023-02-15T19:51:33.8953298Z	INFO	Event      	None           	         0	cf0b0014-60ad-4ba4-8c53-5570278e7b26	12-0-0	[AppService Client] The App Service connection has been closed from the other end. [Status = Completed]
+2023-02-15T19:51:33.9028830Z	INFO	Event      	None           	         0	cf0b0014-60ad-4ba4-8c53-5570278e7b26	12-0-0	[AppService Client] The App Service is disconnected.
+2023-02-15T19:51:33.9137086Z	INFO	Event      	None           	         0	cf0b0014-60ad-4ba4-8c53-5570278e7b26	12-0-0	[Management Extension] Disconnected.
+2023-02-15T19:51:33.9137086Z	INFO	Event      	None           	         0	cf0b0014-60ad-4ba4-8c53-5570278e7b26	12-0-0	IntuneManagementExtension Bridge exiting.
+2023-02-15T19:59:33.6913908Z	INFO	Event      	None           	         0	77f721d2-07b5-4a59-b352-fcb36cc740d3	1-0-0	IntuneManagementExtension Bridge starting up.
+2023-02-15T19:59:33.7424460Z	INFO	Event      	None           	         0	77f721d2-07b5-4a59-b352-fcb36cc740d3	1-0-0	Loading settings file
+2023-02-15T19:59:33.7497845Z	INFO	Event      	None           	         0	77f721d2-07b5-4a59-b352-fcb36cc740d3	6-0-0	<?xml version="1.0" encoding="utf-8"?>
+	<settings>
+	  <enableDebug>false</enableDebug>
+	  <extensions>
+	    <extension>AzureAD</extension>
+	  </extensions>
+	  <AzureAD>
+	    <authority>organizations</authority>
+	    <validateAuthority>true</validateAuthority>
+	    <useCorporateNetwork>true</useCorporateNetwork>
+	    <stsAadTokenHandler>https://manage.microsoft.com/UISecurityTokenService/StsAadTokenHandler.ashx?api-version=1.0</stsAadTokenHandler>
+	    <changePasswordUri>https://go.microsoft.com/fwlink/?LinkId=506634</changePasswordUri>
+	    <tokenRenewalThreshold>0.5</tokenRenewalThreshold>
+	    <redirectUriOverride>false</redirectUriOverride>
+	  </AzureAD>
+	  <Graph>
+	    <aadEndpoint>https://graph.windows.net</aadEndpoint>
+	    <msEndpoint>https://graph.microsoft.com/</msEndpoint>
+	    <apiVersion>v1.0</apiVersion>
+	  </Graph>
+	  <Experimentation>
+	    <endpoint>https://config.edge.skype.com/config/v1/WindowsCP/1.0.0.0/</endpoint>
+	    <agent>WindowsCP</agent>
+	  </Experimentation>
+	  <deviceCacheDurationSeconds>600</deviceCacheDurationSeconds>
+	  <contactCacheDurationSeconds>3600</contactCacheDurationSeconds>
+	  <filterCacheDurationSeconds>300</filterCacheDurationSeconds>
+	  <applicationCacheDurationSeconds>300</applicationCacheDurationSeconds>
+	  <backgroundMonitorPollingIntervalSeconds>10</backgroundMonitorPollingIntervalSeconds>
+	  <PollingConfigurations>
+	    <DefaultPollingIntervalInSeconds>600</DefaultPollingIntervalInSeconds>
+	  </PollingConfigurations>
+	  <localMsiMonitorPollingIntervalSeconds>5</localMsiMonitorPollingIntervalSeconds>
+	  <aadRegistrationMonitorPollingIntervalSeconds>10</aadRegistrationMonitorPollingIntervalSeconds>
+	  <!-- mdmEnrollmentPollingIntervalSeconds is 20 seconds due to costly and sometimes slow (10-15s) device queries -->
+	  <mdmEnrollmentPollingIntervalSeconds>20</mdmEnrollmentPollingIntervalSeconds>
+	  <remoteSessionPollingIntervalSeconds>15</remoteSessionPollingIntervalSeconds>
+	  <fileOperationRetryBackoffSeconds>0.5</fileOperationRetryBackoffSeconds>
+	</settings>
+	
+2023-02-15T19:59:34.0959184Z	INFO	Event      	None           	         0	77f721d2-07b5-4a59-b352-fcb36cc740d3	8-0-0	[AppService Client] Connection opened to "msft.intune.companyportal.sidecarbridge", awaiting acknowledgement.
+2023-02-15T19:59:34.1214134Z	INFO	Event      	None           	         0	77f721d2-07b5-4a59-b352-fcb36cc740d3	9-0-0	[AppService Client] {Request #1} Trying to parse expected AppService connection result...
+2023-02-15T19:59:34.1381394Z	INFO	Event      	None           	         0	77f721d2-07b5-4a59-b352-fcb36cc740d3	3-0-0	[AppService Client] The App Service connection completed successfully.
+2023-02-15T19:59:34.1712670Z	INFO	Event      	None           	         0	77f721d2-07b5-4a59-b352-fcb36cc740d3	10-0-0	[Management Extension] Initializing connection.
+2023-02-15T19:59:34.2547734Z	INFO	Event      	None           	         0	77f721d2-07b5-4a59-b352-fcb36cc740d3	13-0-0	[Management Extension] Service is running API version 6.  No adaptation needed.
+2023-02-15T19:59:34.2547734Z	INFO	Event      	None           	         0	77f721d2-07b5-4a59-b352-fcb36cc740d3	13-0-0	[Management Extension] Connection initialized. Idle timeout = 00:10:00.
+2023-02-15T19:59:34.2647547Z	INFO	Event      	None           	         0	77f721d2-07b5-4a59-b352-fcb36cc740d3	9-0-0	[Management Extension] Requesting all apps status.
+2023-02-15T20:09:34.3768151Z	ERR_	Event      	None           	         0	77f721d2-07b5-4a59-b352-fcb36cc740d3	11-0-0	[Management Extension] Client channel is in a faulted state. This is expected if the idle timeout has elapsed. Idle time = 00:10:00.0994835.
+2023-02-15T20:09:34.3893516Z	INFO	Event      	None           	         0	77f721d2-07b5-4a59-b352-fcb36cc740d3	11-0-0	[Management Extension] Disconnected.
+2023-02-15T20:09:34.3903658Z	INFO	Event      	None           	         0	77f721d2-07b5-4a59-b352-fcb36cc740d3	11-0-0	[AppService Client] Management Extension client disconnected.
+2023-02-15T20:09:34.3989236Z	INFO	Event      	None           	         0	77f721d2-07b5-4a59-b352-fcb36cc740d3	11-0-0	[AppService Client] The App Service is disconnected.
+2023-02-15T20:09:34.4041536Z	INFO	Event      	None           	         0	77f721d2-07b5-4a59-b352-fcb36cc740d3	11-0-0	[Management Extension] Disconnected.
+2023-02-15T20:09:34.4051681Z	INFO	Event      	None           	         0	77f721d2-07b5-4a59-b352-fcb36cc740d3	11-0-0	IntuneManagementExtension Bridge exiting.
+2023-02-16T00:57:49.6273603Z	INFO	Event      	None           	         0	2d33b763-f799-4ab5-b699-74e79680f3d6	1-0-0	IntuneManagementExtension Bridge starting up.
+2023-02-16T00:57:49.6614058Z	INFO	Event      	None           	         0	2d33b763-f799-4ab5-b699-74e79680f3d6	1-0-0	Loading settings file
+2023-02-16T00:57:49.6670314Z	INFO	Event      	None           	         0	2d33b763-f799-4ab5-b699-74e79680f3d6	3-0-0	<?xml version="1.0" encoding="utf-8"?>
+	<settings>
+	  <enableDebug>false</enableDebug>
+	  <extensions>
+	    <extension>AzureAD</extension>
+	  </extensions>
+	  <AzureAD>
+	    <authority>organizations</authority>
+	    <validateAuthority>true</validateAuthority>
+	    <useCorporateNetwork>true</useCorporateNetwork>
+	    <stsAadTokenHandler>https://manage.microsoft.com/UISecurityTokenService/StsAadTokenHandler.ashx?api-version=1.0</stsAadTokenHandler>
+	    <changePasswordUri>https://go.microsoft.com/fwlink/?LinkId=506634</changePasswordUri>
+	    <tokenRenewalThreshold>0.5</tokenRenewalThreshold>
+	    <redirectUriOverride>false</redirectUriOverride>
+	  </AzureAD>
+	  <Graph>
+	    <aadEndpoint>https://graph.windows.net</aadEndpoint>
+	    <msEndpoint>https://graph.microsoft.com/</msEndpoint>
+	    <apiVersion>v1.0</apiVersion>
+	  </Graph>
+	  <Experimentation>
+	    <endpoint>https://config.edge.skype.com/config/v1/WindowsCP/1.0.0.0/</endpoint>
+	    <agent>WindowsCP</agent>
+	  </Experimentation>
+	  <deviceCacheDurationSeconds>600</deviceCacheDurationSeconds>
+	  <contactCacheDurationSeconds>3600</contactCacheDurationSeconds>
+	  <filterCacheDurationSeconds>300</filterCacheDurationSeconds>
+	  <applicationCacheDurationSeconds>300</applicationCacheDurationSeconds>
+	  <backgroundMonitorPollingIntervalSeconds>10</backgroundMonitorPollingIntervalSeconds>
+	  <PollingConfigurations>
+	    <DefaultPollingIntervalInSeconds>600</DefaultPollingIntervalInSeconds>
+	  </PollingConfigurations>
+	  <localMsiMonitorPollingIntervalSeconds>5</localMsiMonitorPollingIntervalSeconds>
+	  <aadRegistrationMonitorPollingIntervalSeconds>10</aadRegistrationMonitorPollingIntervalSeconds>
+	  <!-- mdmEnrollmentPollingIntervalSeconds is 20 seconds due to costly and sometimes slow (10-15s) device queries -->
+	  <mdmEnrollmentPollingIntervalSeconds>20</mdmEnrollmentPollingIntervalSeconds>
+	  <remoteSessionPollingIntervalSeconds>15</remoteSessionPollingIntervalSeconds>
+	  <fileOperationRetryBackoffSeconds>0.5</fileOperationRetryBackoffSeconds>
+	</settings>
+	
+2023-02-16T00:57:49.8556462Z	INFO	Event      	None           	         0	2d33b763-f799-4ab5-b699-74e79680f3d6	9-0-0	[AppService Client] Connection opened to "msft.intune.companyportal.sidecarbridge", awaiting acknowledgement.
+2023-02-16T00:57:49.8643872Z	INFO	Event      	None           	         0	2d33b763-f799-4ab5-b699-74e79680f3d6	10-0-0	[AppService Client] {Request #1} Trying to parse expected AppService connection result...
+2023-02-16T00:57:49.8767903Z	INFO	Event      	None           	         0	2d33b763-f799-4ab5-b699-74e79680f3d6	3-0-0	[AppService Client] The App Service connection completed successfully.
+2023-02-16T00:57:49.9021580Z	INFO	Event      	None           	         0	2d33b763-f799-4ab5-b699-74e79680f3d6	11-0-0	[Management Extension] Initializing connection.
+2023-02-16T00:57:50.7000330Z	INFO	Event      	None           	         0	2d33b763-f799-4ab5-b699-74e79680f3d6	13-0-0	[Management Extension] Service is running API version 6.  No adaptation needed.
+2023-02-16T00:57:50.7010720Z	INFO	Event      	None           	         0	2d33b763-f799-4ab5-b699-74e79680f3d6	13-0-0	[Management Extension] Connection initialized. Idle timeout = 00:10:00.
+2023-02-16T00:57:50.7192016Z	INFO	Event      	None           	         0	2d33b763-f799-4ab5-b699-74e79680f3d6	11-0-0	[Management Extension] Requesting available and required app Management Extension sync session with ID d5499b57-8949-4eac-b70c-7a65ff8ee73f.
+2023-02-16T00:57:51.0992691Z	ERR_	Event      	None           	         0	2d33b763-f799-4ab5-b699-74e79680f3d6	13-0-0	[Management Extension] Management Extension sync session with ID d5499b57-8949-4eac-b70c-7a65ff8ee73f failed. [1]
+2023-02-16T01:00:23.6501944Z	INFO	Event      	None           	         0	2d33b763-f799-4ab5-b699-74e79680f3d6	6-0-0	[AppService Client] The App Service connection has been closed from the other end. [Status = Completed]
+2023-02-16T01:00:23.6561915Z	INFO	Event      	None           	         0	2d33b763-f799-4ab5-b699-74e79680f3d6	6-0-0	[AppService Client] The App Service is disconnected.
+2023-02-16T01:00:23.6651926Z	INFO	Event      	None           	         0	2d33b763-f799-4ab5-b699-74e79680f3d6	6-0-0	[Management Extension] Disconnected.
+2023-02-16T01:00:23.6651926Z	INFO	Event      	None           	         0	2d33b763-f799-4ab5-b699-74e79680f3d6	6-0-0	IntuneManagementExtension Bridge exiting.
+2023-02-16T02:08:22.1642170Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	1-0-0	IntuneManagementExtension Bridge starting up.
+2023-02-16T02:08:22.2180932Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	1-0-0	Loading settings file
+2023-02-16T02:08:22.2261721Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	3-0-0	<?xml version="1.0" encoding="utf-8"?>
+	<settings>
+	  <enableDebug>false</enableDebug>
+	  <extensions>
+	    <extension>AzureAD</extension>
+	  </extensions>
+	  <AzureAD>
+	    <authority>organizations</authority>
+	    <validateAuthority>true</validateAuthority>
+	    <useCorporateNetwork>true</useCorporateNetwork>
+	    <stsAadTokenHandler>https://manage.microsoft.com/UISecurityTokenService/StsAadTokenHandler.ashx?api-version=1.0</stsAadTokenHandler>
+	    <changePasswordUri>https://go.microsoft.com/fwlink/?LinkId=506634</changePasswordUri>
+	    <tokenRenewalThreshold>0.5</tokenRenewalThreshold>
+	    <redirectUriOverride>false</redirectUriOverride>
+	  </AzureAD>
+	  <Graph>
+	    <aadEndpoint>https://graph.windows.net</aadEndpoint>
+	    <msEndpoint>https://graph.microsoft.com/</msEndpoint>
+	    <apiVersion>v1.0</apiVersion>
+	  </Graph>
+	  <Experimentation>
+	    <endpoint>https://config.edge.skype.com/config/v1/WindowsCP/1.0.0.0/</endpoint>
+	    <agent>WindowsCP</agent>
+	  </Experimentation>
+	  <deviceCacheDurationSeconds>600</deviceCacheDurationSeconds>
+	  <contactCacheDurationSeconds>3600</contactCacheDurationSeconds>
+	  <filterCacheDurationSeconds>300</filterCacheDurationSeconds>
+	  <applicationCacheDurationSeconds>300</applicationCacheDurationSeconds>
+	  <backgroundMonitorPollingIntervalSeconds>10</backgroundMonitorPollingIntervalSeconds>
+	  <PollingConfigurations>
+	    <DefaultPollingIntervalInSeconds>600</DefaultPollingIntervalInSeconds>
+	  </PollingConfigurations>
+	  <localMsiMonitorPollingIntervalSeconds>5</localMsiMonitorPollingIntervalSeconds>
+	  <aadRegistrationMonitorPollingIntervalSeconds>10</aadRegistrationMonitorPollingIntervalSeconds>
+	  <!-- mdmEnrollmentPollingIntervalSeconds is 20 seconds due to costly and sometimes slow (10-15s) device queries -->
+	  <mdmEnrollmentPollingIntervalSeconds>20</mdmEnrollmentPollingIntervalSeconds>
+	  <remoteSessionPollingIntervalSeconds>15</remoteSessionPollingIntervalSeconds>
+	  <fileOperationRetryBackoffSeconds>0.5</fileOperationRetryBackoffSeconds>
+	</settings>
+	
+2023-02-16T02:08:22.6168094Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	8-0-0	[AppService Client] Connection opened to "msft.intune.companyportal.sidecarbridge", awaiting acknowledgement.
+2023-02-16T02:08:22.6393050Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	9-0-0	[AppService Client] {Request #1} Trying to parse expected AppService connection result...
+2023-02-16T02:08:22.6614611Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	4-0-0	[AppService Client] The App Service connection completed successfully.
+2023-02-16T02:08:22.7033169Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	9-0-0	[Management Extension] Initializing connection.
+2023-02-16T02:08:24.6412143Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	11-0-0	[Management Extension] Service is running API version 6.  No adaptation needed.
+2023-02-16T02:08:24.6412143Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	11-0-0	[Management Extension] Connection initialized. Idle timeout = 00:10:00.
+2023-02-16T02:08:24.6514316Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	14-0-0	[Management Extension] Requesting all apps status.
+2023-02-16T02:09:30.2395309Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	9-0-0	[Management Extension] Requesting available and required app Management Extension sync session with ID 69c2d686-ecb8-4cad-b1f5-85daf300c5f0.
+2023-02-16T02:09:30.6287139Z	ERR_	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	20-0-0	[Management Extension] Management Extension sync session with ID 69c2d686-ecb8-4cad-b1f5-85daf300c5f0 failed. [1]
+2023-02-16T02:12:00.1964242Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	14-0-0	[Management Extension] Requesting all apps status.
+2023-02-16T02:13:00.6569915Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	19-0-0	[Management Extension] Requesting available and required app Management Extension sync session with ID cf86bbfc-98c0-4bed-869f-8c6faaaa4617.
+2023-02-16T02:13:00.9309967Z	ERR_	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	27-0-0	[Management Extension] Management Extension sync session with ID cf86bbfc-98c0-4bed-869f-8c6faaaa4617 failed. [1]
+2023-02-16T02:23:01.0294674Z	ERR_	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	10-0-0	[Management Extension] Client channel is in a faulted state. This is expected if the idle timeout has elapsed. Idle time = 00:10:00.0991178.
+2023-02-16T02:23:01.0414813Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	10-0-0	[Management Extension] Disconnected.
+2023-02-16T02:23:01.0414813Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	10-0-0	[AppService Client] Management Extension client disconnected.
+2023-02-16T02:23:01.0476509Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	10-0-0	[AppService Client] The App Service is disconnected.
+2023-02-16T02:23:01.0516524Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	10-0-0	[Management Extension] Disconnected.
+2023-02-16T02:23:01.0516524Z	INFO	Event      	None           	         0	d9cb6d56-b366-48ff-87f6-57f96956d171	10-0-0	IntuneManagementExtension Bridge exiting.
+2023-02-18T06:01:17.9649152Z	INFO	Event      	None           	         0	8a73052a-ff6f-4d46-bd73-2d36e3d2579d	1-0-0	IntuneManagementExtension Bridge starting up.
+2023-02-18T06:01:18.0309735Z	INFO	Event      	None           	         0	8a73052a-ff6f-4d46-bd73-2d36e3d2579d	1-0-0	Loading settings file
+2023-02-18T06:01:18.0389771Z	INFO	Event      	None           	         0	8a73052a-ff6f-4d46-bd73-2d36e3d2579d	3-0-0	<?xml version="1.0" encoding="utf-8"?>
+	<settings>
+	  <enableDebug>false</enableDebug>
+	  <extensions>
+	    <extension>AzureAD</extension>
+	  </extensions>
+	  <AzureAD>
+	    <authority>organizations</authority>
+	    <validateAuthority>true</validateAuthority>
+	    <useCorporateNetwork>true</useCorporateNetwork>
+	    <stsAadTokenHandler>https://manage.microsoft.com/UISecurityTokenService/StsAadTokenHandler.ashx?api-version=1.0</stsAadTokenHandler>
+	    <changePasswordUri>https://go.microsoft.com/fwlink/?LinkId=506634</changePasswordUri>
+	    <tokenRenewalThreshold>0.5</tokenRenewalThreshold>
+	    <redirectUriOverride>false</redirectUriOverride>
+	  </AzureAD>
+	  <Graph>
+	    <aadEndpoint>https://graph.windows.net</aadEndpoint>
+	    <msEndpoint>https://graph.microsoft.com/</msEndpoint>
+	    <apiVersion>v1.0</apiVersion>
+	  </Graph>
+	  <Experimentation>
+	    <endpoint>https://config.edge.skype.com/config/v1/WindowsCP/1.0.0.0/</endpoint>
+	    <agent>WindowsCP</agent>
+	  </Experimentation>
+	  <deviceCacheDurationSeconds>600</deviceCacheDurationSeconds>
+	  <contactCacheDurationSeconds>3600</contactCacheDurationSeconds>
+	  <filterCacheDurationSeconds>300</filterCacheDurationSeconds>
+	  <applicationCacheDurationSeconds>300</applicationCacheDurationSeconds>
+	  <backgroundMonitorPollingIntervalSeconds>10</backgroundMonitorPollingIntervalSeconds>
+	  <PollingConfigurations>
+	    <DefaultPollingIntervalInSeconds>600</DefaultPollingIntervalInSeconds>
+	  </PollingConfigurations>
+	  <localMsiMonitorPollingIntervalSeconds>5</localMsiMonitorPollingIntervalSeconds>
+	  <aadRegistrationMonitorPollingIntervalSeconds>10</aadRegistrationMonitorPollingIntervalSeconds>
+	  <!-- mdmEnrollmentPollingIntervalSeconds is 20 seconds due to costly and sometimes slow (10-15s) device queries -->
+	  <mdmEnrollmentPollingIntervalSeconds>20</mdmEnrollmentPollingIntervalSeconds>
+	  <remoteSessionPollingIntervalSeconds>15</remoteSessionPollingIntervalSeconds>
+	  <fileOperationRetryBackoffSeconds>0.5</fileOperationRetryBackoffSeconds>
+	</settings>
+	
+2023-02-18T06:01:18.2991293Z	INFO	Event      	None           	         0	8a73052a-ff6f-4d46-bd73-2d36e3d2579d	8-0-0	[AppService Client] Connection opened to "msft.intune.companyportal.sidecarbridge", awaiting acknowledgement.
+2023-02-18T06:01:18.3313615Z	INFO	Event      	None           	         0	8a73052a-ff6f-4d46-bd73-2d36e3d2579d	9-0-0	[AppService Client] {Request #1} Trying to parse expected AppService connection result...
+2023-02-18T06:01:18.4057308Z	INFO	Event      	None           	         0	8a73052a-ff6f-4d46-bd73-2d36e3d2579d	4-0-0	[AppService Client] The App Service connection completed successfully.
+2023-02-18T06:01:18.4518008Z	INFO	Event      	None           	         0	8a73052a-ff6f-4d46-bd73-2d36e3d2579d	9-0-0	[Management Extension] Initializing connection.
+2023-02-18T06:01:20.5400674Z	INFO	Event      	None           	         0	8a73052a-ff6f-4d46-bd73-2d36e3d2579d	13-0-0	[Management Extension] Service is running API version 6.  No adaptation needed.
+2023-02-18T06:01:20.5400674Z	INFO	Event      	None           	         0	8a73052a-ff6f-4d46-bd73-2d36e3d2579d	13-0-0	[Management Extension] Connection initialized. Idle timeout = 00:10:00.
+2023-02-18T06:01:20.5543506Z	INFO	Event      	None           	         0	8a73052a-ff6f-4d46-bd73-2d36e3d2579d	14-0-0	[Management Extension] Requesting all apps status.
+2023-02-18T06:02:34.0329663Z	INFO	Event      	None           	         0	8a73052a-ff6f-4d46-bd73-2d36e3d2579d	9-0-0	[Management Extension] Requesting all apps status.
+2023-02-18T06:12:34.1137064Z	ERR_	Event      	None           	         0	8a73052a-ff6f-4d46-bd73-2d36e3d2579d	11-0-0	[Management Extension] Client channel is in a faulted state. This is expected if the idle timeout has elapsed. Idle time = 00:10:00.0750745.
+2023-02-18T06:12:34.1217079Z	INFO	Event      	None           	         0	8a73052a-ff6f-4d46-bd73-2d36e3d2579d	11-0-0	[Management Extension] Disconnected.
+2023-02-18T06:12:34.1227053Z	INFO	Event      	None           	         0	8a73052a-ff6f-4d46-bd73-2d36e3d2579d	11-0-0	[AppService Client] Management Extension client disconnected.
+2023-02-18T06:12:34.1287051Z	INFO	Event      	None           	         0	8a73052a-ff6f-4d46-bd73-2d36e3d2579d	11-0-0	[AppService Client] The App Service is disconnected.
+2023-02-18T06:12:34.1317062Z	INFO	Event      	None           	         0	8a73052a-ff6f-4d46-bd73-2d36e3d2579d	11-0-0	[Management Extension] Disconnected.
+2023-02-18T06:12:34.1327089Z	INFO	Event      	None           	         0	8a73052a-ff6f-4d46-bd73-2d36e3d2579d	11-0-0	IntuneManagementExtension Bridge exiting.
